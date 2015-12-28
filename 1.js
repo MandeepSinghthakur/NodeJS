@@ -13,7 +13,15 @@ var args = require("minimist")(process.argv.slice(2),{ string:"file"});
   }
 
 var hello = require("./helloworld.js")
+
 hello.say(args.file,function(err ,contents){
-   console.log(contents.toString());
+	if(err)
+	{
+		console.log("Error: " +  err)
+	}
+	else
+	{
+   		console.log(contents.toString());
+	}
 })
 
