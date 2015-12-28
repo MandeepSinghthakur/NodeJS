@@ -1,0 +1,17 @@
+{
+  "name": "nodetuts",
+  "version": "0.0.1",
+  "description": "Learning Node ",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node"
+  ],
+  "author": "Mandeep Singh",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
