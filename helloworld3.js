@@ -5,7 +5,10 @@ require("asynquence-contrib");
 function readFile(filename){
     return ASQ(function(done){
         var stream= fs.createReadStream(filename);
-        var contents=""
+        var contents="";
+
+        stream.pipe(fs.createWriteStream(filename + ".backup"));
+       
         stream.on("data",function(chunk){
            // console.log("data");
             contents += chunk;
