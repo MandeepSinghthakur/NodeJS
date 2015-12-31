@@ -10,7 +10,7 @@
     "Node"
   ],
   "author": "Mandeep Singh",
-  "license": "ISC",
+  "license": "MIC",
   "dependencies": {
     "asynquence": "^0.8.2",
     "asynquence-contrib": "^0.24.0",
