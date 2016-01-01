@@ -8,7 +8,7 @@ function readFile(filename){
         var contents="";
 
         stream.pipe(fs.createWriteStream(filename + ".backup"));
-       
+        
         stream.on("data",function(chunk){
            // console.log("data");
             contents += chunk;
